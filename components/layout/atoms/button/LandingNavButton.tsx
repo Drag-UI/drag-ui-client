@@ -19,14 +19,14 @@ const Button = styles.button`
   color: white;
   outline: none;
   border: none;
-  padding: 15px 32px;
+  padding: 10px 25px;
   border-radius: 110px;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 17rem;
+  width: 13.5rem;
 
   svg {
     font-size: 2rem;
