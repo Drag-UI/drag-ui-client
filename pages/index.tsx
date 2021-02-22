@@ -1,10 +1,9 @@
-import LandingFeature from '../components/layout/organisms/LandingFeature';
+import LandingTemplate from "../components/layout/templates/LandingTemplate";
 
 const Home = (): JSX.Element => {
   return (
     <>
-      <h1>Hello Next</h1>
-      <LandingFeature />
+      <LandingTemplate />
     </>
   );
 };
