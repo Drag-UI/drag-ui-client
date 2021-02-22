@@ -14,14 +14,14 @@ const Block = styles.div`
   h1 {
     font-family: 'Lobster';
     color: white;
-    font-size: 6rem;
+    font-size: 8rem;
     padding-bottom: 2.5rem;
   }
 
   h3 {
     font-family: 'Lobster';
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
