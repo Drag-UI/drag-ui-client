@@ -1,4 +1,5 @@
 import LandingTemplate from "../components/layout/templates/LandingTemplate";
+
 const Home = (): JSX.Element => {
   return (
     <>
