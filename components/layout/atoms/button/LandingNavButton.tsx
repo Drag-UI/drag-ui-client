@@ -36,7 +36,7 @@ const Button = styles.button`
 //* =================
 //*   Render
 //* =================
-const MainButton = ({ innerText, style }: ButtonProps): JSX.Element => {
+const LandingNavButton = ({ innerText, style }: ButtonProps): JSX.Element => {
   return (
     <>
       <Button type="button" color={style}>
@@ -47,4 +47,4 @@ const MainButton = ({ innerText, style }: ButtonProps): JSX.Element => {
   );
 };
 
-export default MainButton;
+export default LandingNavButton;
