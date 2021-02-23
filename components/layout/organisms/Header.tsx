@@ -1,8 +1,8 @@
-import { ReactElement } from "react";
-import Logo from "../atoms/anchor/Logo";
-import styles from "styled-components";
+import { ReactElement } from 'react';
+import Logo from '../atoms/anchor/Logo';
+import styled from 'styled-components';
 
-const Block = styles.div`
+const Block = styled.div`
   position: fixed;
 `;
 const Header = (): ReactElement => {

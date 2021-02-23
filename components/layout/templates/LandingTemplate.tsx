@@ -1,35 +1,52 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { ReactElement } from "react";
-import LandingTitle from "../organisms/LandingTitle";
-import LandingNavButton from "../atoms/button/LandingNavButton";
-import Header from "../organisms/Header";
-import styles from "styled-components";
+import { ReactElement } from 'react';
+import LandingTitle from '../organisms/LandingTitle';
+import LandingNavButton from '../atoms/button/LandingNavButton';
+import Header from '../organisms/Header';
+import LandingFeature from '../organisms/LandingFeature';
+import styled from 'styled-components';
 
-const Block = styles.div`
+const Block = styled.div`
   height: 100vh;
   width: 100vw;
-  background-image: url("/images/background.png");
+  background-image: url('/images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 `;
 
-const Wrapper = styles.div`
+const Wrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
 
-const ContentBlock = styles.div`
+const ContentBlock = styled.div`
   padding-top: 135px;
 `;
 
-const ButtonsBlock = styles.div`
+const ButtonsBlock = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 550px;
+  width: 490px;
   margin: 0 auto;
 `;
 
-const LandingLayout = (): ReactElement => {
+const FeatureBlock = styled.div`
+  margin-top: 10rem;
+`;
+
+interface ButtonProp {
+  style: string;
+  innerText: string;
+}
+
+interface LandingTemplateProps {
+  buttonProps: ButtonProp[];
+}
+
+const LandingTemplate = ({
+  buttonProps,
+}: LandingTemplateProps): ReactElement => {
   return (
     <Block>
       <Wrapper>
@@ -37,13 +54,21 @@ const LandingLayout = (): ReactElement => {
         <ContentBlock>
           <LandingTitle />
           <ButtonsBlock>
-            <LandingNavButton style="start" innerText="GET STARTED !" />
-            <LandingNavButton style="repo" innerText="VISIT GIT REPO" />
+            {buttonProps.map((ele) => (
+              <LandingNavButton
+                key={`button-${ele.style}`}
+                style={ele.style}
+                innerText={ele.innerText}
+              />
+            ))}
           </ButtonsBlock>
+          <FeatureBlock>
+            <LandingFeature />
+          </FeatureBlock>
         </ContentBlock>
       </Wrapper>
     </Block>
   );
 };
 
-export default LandingLayout;
+export default LandingTemplate;

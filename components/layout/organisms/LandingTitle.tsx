@@ -1,27 +1,27 @@
-import { ReactElement } from "react";
-import styles from "styled-components";
+import { ReactElement } from 'react';
+import styled from 'styled-components';
 
-const Block = styles.div`
+const Block = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
 
   img {
-    width : 95px;
+    width: 95px;
   }
 
   h1 {
     font-family: 'Lobster';
     color: white;
-    font-size: 8rem;
+    font-size: 12rem;
     padding-bottom: 2.5rem;
   }
 
   h3 {
     font-family: 'Lobster';
     color: white;
-    font-size: 2.5rem;
+    font-size: 4.2rem;
   }
 `;
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledTitle = styled.h4`
   font-size: 2rem;
+  font-weight: 600;
 `;
 
 interface TitleProps {

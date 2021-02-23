@@ -9,7 +9,6 @@ import layoutIcon from '../../../public/images/icons/layout-icon.png';
 const LandingFeatureBlock = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: black;
 `;
 
 const LandingFeature = (): ReactElement => {
