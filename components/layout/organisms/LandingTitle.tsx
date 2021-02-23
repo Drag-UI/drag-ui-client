@@ -15,13 +15,16 @@ const Block = styled.div`
     font-family: 'Lobster';
     color: white;
     font-size: 12rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
   }
 
   h3 {
     font-family: 'Lobster';
     color: white;
     font-size: 4.2rem;
+    border: 3px dashed rgba(255,255,255,.5);
+    padding: 15px 24px;
+}
   }
 `;
 
