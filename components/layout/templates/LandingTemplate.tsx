@@ -13,6 +13,7 @@ const Block = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 `;
 
 const Wrapper = styled.div`
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const ContentBlock = styled.div`
-  padding-top: 135px;
+  padding-top: 70px;
 `;
 
 const ButtonsBlock = styled.div`
