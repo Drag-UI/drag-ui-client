@@ -9,6 +9,7 @@ const HeaderBlock = styled.div`
   padding: 8px 10px;
   display: flex;
   align-items: center;
+  z-index: 3;
 `;
 
 const ButtonsBlock = styled.div`
