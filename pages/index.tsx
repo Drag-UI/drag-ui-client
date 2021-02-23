@@ -1,9 +1,9 @@
-import LandingTemplate from "../components/layout/templates/LandingTemplate";
+import LandingPage from '../components/layout/pages/LandingPage';
 
 const Home = (): JSX.Element => {
   return (
     <>
-      <LandingTemplate />
+      <LandingPage />
     </>
   );
 };
