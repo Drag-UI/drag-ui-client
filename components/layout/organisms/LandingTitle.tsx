@@ -22,16 +22,15 @@ const Block = styled.div`
     font-family: 'Lobster';
     color: white;
     font-size: 4.2rem;
-    border: 3px dashed rgba(255,255,255,.5);
+    border: 3px dashed rgba(255, 255, 255, 0.5);
     padding: 15px 24px;
-}
   }
 `;
 
 const MainTitle = (): ReactElement => {
   return (
     <Block>
-      <img src="/images/logo.png" alt="" />
+      <img src="/images/logo.png" alt="logoImage" />
       <h1>Drag UI!</h1>
       <h3>Create your frontend code quickly with our simple tools</h3>
     </Block>

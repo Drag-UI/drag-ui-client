@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { ReactElement } from 'react';
 import LandingTitle from '../organisms/LandingTitle';
-import LandingNavButton from '../atoms/button/LandingNavButton';
-import Header from '../organisms/Header';
+import LandingNavButton from '../atoms/anchor/LandingNavButton';
+import Header from '../organisms/LandingHeader';
 import LandingFeature from '../organisms/LandingFeature';
 import styled from 'styled-components';
 
