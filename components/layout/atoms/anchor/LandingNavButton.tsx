@@ -1,5 +1,6 @@
 import { FaRegHandPointer, FaGithub } from 'react-icons/fa';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 //? =================
 //?   Interface
@@ -12,7 +13,7 @@ interface ButtonProps {
 //* =================
 //*   Styles
 //* =================
-const Button = styled.button`
+const Inline = styled.div`
   background-color: ${(props) =>
     props.color === 'start' ? '#FFAC4F' : '#1BBC6F'};
 
@@ -26,7 +27,8 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 19rem;
+  width: 14rem;
+  cursor: pointer;
 
   svg {
     font-size: 2rem;
@@ -39,10 +41,12 @@ const Button = styled.button`
 const LandingNavButton = ({ innerText, style }: ButtonProps): JSX.Element => {
   return (
     <>
-      <Button type="button" color={style}>
-        {style === 'start' ? <FaRegHandPointer /> : <FaGithub />}
-        {innerText}
-      </Button>
+      <Link href="/build">
+        <Inline color={style}>
+          {style === 'start' ? <FaRegHandPointer /> : <FaGithub />}
+          {innerText}
+        </Inline>
+      </Link>
     </>
   );
 };

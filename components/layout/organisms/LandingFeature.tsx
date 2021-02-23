@@ -11,7 +11,7 @@ const LandingFeatureBlock = styled.div`
   justify-content: space-between;
 `;
 
-const LandingFeature = (): ReactElement => {
+const LandingHeader = (): ReactElement => {
   return (
     <LandingFeatureBlock>
       <Card
@@ -42,4 +42,4 @@ const LandingFeature = (): ReactElement => {
   );
 };
 
-export default LandingFeature;
+export default LandingHeader;
