@@ -7,9 +7,15 @@ import LandingFeature from '../organisms/LandingFeature';
 import styled from 'styled-components';
 import LandingDescription from '../organisms/LandingDescription';
 
-const Block = styled.div`
+const Block = styled.div``;
+
+const Wrapper = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
+const MainBlock = styled.div`
   height: 100vh;
-  width: 100vw;
   background-image: url('/images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,13 +23,8 @@ const Block = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 `;
 
-const Wrapper = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-const ContentBlock = styled.div`
-  padding-top: 70px;
+const MainSpaceBlock = styled.div`
+  height: 70px;
 `;
 
 const ButtonsBlock = styled.div`
@@ -53,7 +54,10 @@ const LandingTemplate = ({
     <Block>
       <Wrapper>
         <Header />
-        <ContentBlock>
+      </Wrapper>
+      <MainBlock>
+        <Wrapper>
+          <MainSpaceBlock />
           <LandingTitle />
           <ButtonsBlock>
             {buttonProps.map((ele) => (
@@ -67,8 +71,10 @@ const LandingTemplate = ({
           <FeatureBlock>
             <LandingFeature />
           </FeatureBlock>
-          <LandingDescription />
-        </ContentBlock>
+        </Wrapper>
+      </MainBlock>
+      <Wrapper>
+        <LandingDescription />
       </Wrapper>
     </Block>
   );

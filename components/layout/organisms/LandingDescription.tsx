@@ -6,8 +6,8 @@ import Title from '../atoms/text/Title';
 import DescriptionCard from '../molecules/DescriptionCard';
 
 const Block = styled.div`
-  margin-top: 300px;
-  padding-bottom: 300px;
+  margin-top: 100px;
+  padding-bottom: 100px;
 `;
 
 const HeaderBlock = styled.div`
