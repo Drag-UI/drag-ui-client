@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import BuildHeader from '../organisms/BuildHeader';
+import BuildToolBar from '../organisms/BuildToolBar';
 import styled from 'styled-components';
 
 const TemplateBlock = styled.div`
@@ -11,7 +12,7 @@ const BuildTemplate = (): ReactElement => {
   return (
     <TemplateBlock>
       <BuildHeader />
-      template
+      <BuildToolBar />
     </TemplateBlock>
   );
 };
