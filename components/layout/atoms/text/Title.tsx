@@ -1,7 +1,8 @@
 import { ReactElement } from 'react';
 import styled, { css } from 'styled-components';
+import { StyledTextProps } from './textTypes';
 
-const StyledTitle = styled.h4`
+const StyledTitle = styled.h4<StyledTextProps>`
   font-size: ${(props) => (props.fontSize ? props.fontSize : '2rem')};
   font-weight: 600;
 
