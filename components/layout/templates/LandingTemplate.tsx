@@ -5,6 +5,7 @@ import LandingNavButton from '../atoms/button/LandingNavButton';
 import Header from '../organisms/Header';
 import LandingFeature from '../organisms/LandingFeature';
 import styled from 'styled-components';
+import LandingDescription from '../organisms/LandingDescription';
 
 const Block = styled.div`
   height: 100vh;
@@ -65,6 +66,7 @@ const LandingTemplate = ({
           <FeatureBlock>
             <LandingFeature />
           </FeatureBlock>
+          <LandingDescription />
         </ContentBlock>
       </Wrapper>
     </Block>

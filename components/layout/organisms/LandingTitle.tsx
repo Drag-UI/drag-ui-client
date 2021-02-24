@@ -25,7 +25,7 @@ const Block = styled.div`
   }
 `;
 
-const MainTitle = (): ReactElement => {
+const LandingTitle = (): ReactElement => {
   return (
     <Block>
       <img src="/images/logo.png" alt="" />
@@ -35,4 +35,4 @@ const MainTitle = (): ReactElement => {
   );
 };
 
-export default MainTitle;
+export default LandingTitle;
