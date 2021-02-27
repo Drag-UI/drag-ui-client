@@ -42,7 +42,7 @@ const Inline = styled.div`
 const LandingNavButton = ({ innerText, style }: ButtonProps): JSX.Element => {
   return (
     <>
-      <Link href="/build">
+      <Link href="/layout">
         <Inline color={style}>
           {style === 'start' ? <FaRegHandPointer /> : <FaGithub />}
           {innerText}

@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import Link from 'next/link';
 
-const BuildHeaderLogo = (): ReactElement => {
+const LayoutHeaderLogo = (): ReactElement => {
   return (
     <>
       <Link href="/">Drag UI!</Link>
@@ -9,4 +9,4 @@ const BuildHeaderLogo = (): ReactElement => {
   );
 };
 
-export default BuildHeaderLogo;
+export default LayoutHeaderLogo;

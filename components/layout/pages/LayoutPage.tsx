@@ -1,10 +1,10 @@
 import { ReactElement } from 'react';
-import BuildTemplate from '../templates/BuildTemplate';
+import LayoutTemplate from '../templates/LayoutTemplate';
 
 const BuildPage = (): ReactElement => {
   return (
     <>
-      <BuildTemplate />
+      <LayoutTemplate />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import BuildPageHeaderLogo from '../molecules/BuildPageHeaderLogo';
+import BuildPageHeaderLogo from '../molecules/LayoutPageHeaderLogo';
 import BuildHeaderButton from '../atoms/button/BuildHeaderButton';
 import styled from 'styled-components';
 

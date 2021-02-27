@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import BuildHeaderLogo from '../atoms/anchor/BuildHeaderLogo';
+import LayoutHeaderLogo from '../atoms/anchor/LayoutHeaderLogo';
 import styled from 'styled-components';
 
 const HeaderLogo = styled.div`
@@ -20,13 +20,13 @@ const HeaderLogo = styled.div`
   }
 `;
 
-const BuildPageHeaderLogo = (): ReactElement => {
+const LayoutPageHeaderLogo = (): ReactElement => {
   return (
     <HeaderLogo>
       <img src="/images/logo.png" alt="logo" />
-      <BuildHeaderLogo />
+      <LayoutHeaderLogo />
     </HeaderLogo>
   );
 };
 
-export default BuildPageHeaderLogo;
+export default LayoutPageHeaderLogo;
