@@ -1,11 +1,13 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { ReactElement } from 'react';
-import LandingTitle from '../organisms/LandingTitle';
-import LandingNavButton from '../atoms/anchor/LandingNavButton';
-import Header from '../organisms/LandingHeader';
-import LandingFeature from '../organisms/LandingFeature';
 import styled from 'styled-components';
+
+import LandingNavButton from '../atoms/anchor/LandingNavButton';
 import LandingDescription from '../organisms/LandingDescription';
+import LandingFeature from '../organisms/LandingFeature';
+import LandingFooter from '../organisms/LandingFooter';
+import Header from '../organisms/LandingHeader';
+import LandingTitle from '../organisms/LandingTitle';
 
 const Block = styled.div``;
 
@@ -76,6 +78,7 @@ const LandingTemplate = ({
       <Wrapper>
         <LandingDescription />
       </Wrapper>
+      <LandingFooter />
     </Block>
   );
 };

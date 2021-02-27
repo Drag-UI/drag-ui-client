@@ -1,6 +1,6 @@
-import { FaRegHandPointer, FaGithub } from 'react-icons/fa';
-import styled from 'styled-components';
 import Link from 'next/link';
+import { FaGithub, FaRegHandPointer } from 'react-icons/fa';
+import styled from 'styled-components';
 
 //? =================
 //?   Interface
@@ -27,8 +27,9 @@ const Inline = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 14rem;
+  width: 15rem;
   cursor: pointer;
+  line-height: 1.1;
 
   svg {
     font-size: 2rem;
