@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import styled from 'styled-components';
+
 import description1 from '../../../public/images/description1.gif';
 import SubText from '../atoms/text/SubText';
 import Title from '../atoms/text/Title';
@@ -7,7 +8,7 @@ import DescriptionCard from '../molecules/DescriptionCard';
 
 const Block = styled.div`
   margin-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 `;
 
 const HeaderBlock = styled.div`
